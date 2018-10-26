@@ -1,0 +1,45 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">@color/colorOrange</item>
+    </style>
+
+    <!-- TextView Team style -->
+    <style name="Team">
+        <item name="android:textColor">@color/colorLightGrey</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/teamPadding</item>
+        <item name="android:layout_marginBottom">@dimen/teamMarginBottom</item>
+        <item name="android:maxLength">10</item>
+        <item name="android:inputType">text</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <!-- TextView Score style -->
+    <style name="Score">
+        <item name="android:textColor">@color/colorLightGrey</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/scorePadding</item>
+        <item name="android:layout_marginBottom">@dimen/scoreMarginBottom</item>
+    </style>
+
+    <!-- Points Buttons style -->
+    <style name="PointsButtons">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_margin">@dimen/buttonLayoutMargin</item>
+    </style>
+
+    <!-- Reset Button style -->
+    <style name="ResetButton">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_margin">@dimen/buttonLayoutMargin</item>
+    </style>
+</resources>

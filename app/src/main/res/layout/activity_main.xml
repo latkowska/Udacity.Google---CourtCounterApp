@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.courtcounter.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/basket" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/team_first_a"
+                style="@style/Team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Tn" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                style="@style/Score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Score" />
+
+            <Button
+                style="@style/PointsButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addThreePointsForTeamA"
+                android:text="@string/P3" />
+
+            <Button
+                style="@style/PointsButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addTwoPointsForTeamA"
+                android:text="@string/P2" />
+
+            <Button
+                style="@style/PointsButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addOnePointsForTeamA"
+                android:text="@string/P1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/team_second_b"
+                style="@style/Team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Tn" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                style="@style/Score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Score" />
+
+            <Button
+                style="@style/PointsButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addThreePointsForTeamB"
+                android:text="@string/P3" />
+
+            <Button
+                style="@style/PointsButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addTwoPointsForTeamB"
+                android:text="@string/P2" />
+
+            <Button
+                style="@style/PointsButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addOnePointsForTeamB"
+                android:text="@string/P1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        style="@style/ResetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="ResetButton"
+        android:text="@string/R" />
+
+</RelativeLayout>
+
+
